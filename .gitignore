@@ -44,3 +44,6 @@ Thumbs.db
 
 # Extra säkerhet – ignorera genererade filer om du vill
 # public/css/style.css
+
+/public/css/main.css
+/public/css/main.css.map
