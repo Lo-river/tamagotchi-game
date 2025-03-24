@@ -3,7 +3,6 @@ logs
 *.log
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
 
@@ -33,13 +32,15 @@ dist/
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 
-# macOS systemfiler (bra om du använder Mac)
+# macOS systemfiler
 .DS_Store
 
-# Windows systemfiler (om du jobbar med Windows ibland)
+# Windows systemfiler
 Thumbs.db
-dist/
-dist/
-node_modules/
 
-public/css/*.css.map
+# Sass/CSS-mappar som ska ignoreras
+/css/                       # <– css-mappen i root (fel plats)
+/public/css/*.css.map       # <– source map-filer
+
+# Extra säkerhet – ignorera genererade filer om du vill
+# public/css/style.css
